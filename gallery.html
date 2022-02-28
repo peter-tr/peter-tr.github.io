@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTS-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gallery - Astro World</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" width="110" height=70"></a>
+    </div>
+    <ul class="nav-links">
+        <li class="current"> <a href="gallery.html">Gallery</a></li>
+        <li> <a href="accommodation.html">Packages</a></li>
+        <li > <a href="aboutus.html">About Us</a></li>
+        <li><a href="booknow.html">Book Now</a></li>
+
+        <!-- <li><a class="dark-mode" href="#">Dark/Light</a></li> -->
+    </ul>
+    <div class="burger">
+        <div class="burgerLine1 "></div>
+        <div class="burgerLine2 "></div>
+        <div class="burgerLine3"></div>
+    </div>
+</nav>
+
+<header>
+
+    <div id="welcome">
+        <h1>Gallery</h1>
+    </div>
+
+    <div class="mySlides fade">
+        <span style="display: none" class="dot"></span>
+        </div>
+
+</header>
+
+<article class="banner">
+    <h3>Click on images to reveal which planets you can find it on</h3>
+</article>
+
+<section>
+
+
+      <div class="maingallery">
+        <div class="images">
+          <div class="description" onclick="display5()">
+          <img src="images/black bird.jpeg" alt="Image of Jupiter - Mt Heak">
+          <span class="descriptiontext" id="g5">Jupiter - Widows Nest</span>
+          </div>
+
+          <div class="description" onclick="display8()">
+            <img src="images/evil lair.jpeg" alt="Image of Jupiter- Orge Peak">
+          <span class="descriptiontext" id="g8">Jupiter- Orge Peak</span>
+          </div>
+
+          <div class="description" onclick="display9()">
+          <img src="images/grossgasinter.jpg" alt="Image of Uranus - Budapest">
+          <span class="descriptiontext" id="g9">Uranus - Budapest</span>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="description" onclick="display7()">
+            <img src="images/lake forest.jpeg" alt="Image of Earth - Natures Witch">
+          <span class="descriptiontext" id="g7">Earth - Natures Witch</span>
+          </div>
+
+          <div class="description" onclick="display11()">
+            <img src="images/white mountain.jpg" alt="Image of Uranus - Snowy Olympus">
+          <span class="descriptiontext" id="g11">Uranus - Snowy Olympus</span>
+          </div>
+
+        </div>
+
+        <div class="images">
+          <div class="description" onclick="display10()">
+          <img src="images/tree.jpg" alt="Image of Uranus - Eye of the Sea">
+          <span class="descriptiontext" id="g10">Uranus - Eye of the Sea</span>
+          </div>
+
+          <div class="description" onclick="display6()">
+            <img src="images/arch.jpeg" alt="Image of Earth - Kings Temple">
+            <span class="descriptiontext" id="g6">Earth - Kings Temple</span>
+            </div>
+
+          
+
+          <div class="description" onclick="display12()">
+            <img src="images/big lake.jpg" alt="Image of Jupiter - Dead Sea">
+          <span class="descriptiontext" id="g12">Jupiter - Dead Sea</span>
+          </div>
+        </div>
+
+
+
+      </div>
+
+</section>
+
+
+
+<footer id="page-footer">
+
+    <nav id="secondary-menu">
+        <ul>
+            <li>
+                <a href="aboutus.html">Park Info</a>
+            </li>
+            <li>
+                <a href="">Follow Us on Social Media</a>
+            </li>
+            <li>
+                <a href="">0431 432 545</a>
+            </li>
+        </ul>
+    </nav>
+
+</footer>
+
+
+</body>
+
+<script src="js/app.js"></script>
+<script src="js/popup.js"></script>
+
+
+</html>
+
+

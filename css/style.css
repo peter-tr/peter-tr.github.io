@@ -1,0 +1,739 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main.body-content {
+    margin-left:10% !important;
+    margin-right:10% !important;
+}
+
+header {
+    margin-left:0%;
+}
+
+body nav {
+    margin-left: 0%;
+}
+
+#packagequiz {
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    background: rgb(15, 3, 36);
+    padding: 2em;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 1.7em;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+}
+
+nav a:hover {
+    background: #aaa;
+}
+
+nav li.current a {
+    background: white;
+    color: black !important;
+    text-shadow: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0c0d40;
+}
+
+.logo {
+    color: #f3efef;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 3em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #eee7e7;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+    font-size: 1.6vw;
+    padding: 0.25em 1em;
+    border-radius: 3px;
+
+}
+
+/* adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup */
+.description {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .description .descriptiontext {
+    visibility: hidden;
+    width: 20vw;
+    background-color:rgb(44, 2, 63);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -15%;
+    font-size: 1.5vw;
+  }
+  
+  .description .descriptiontext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-style: solid;
+    border-color:black;
+  }
+  
+  .description .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.8s;
+    animation: fadeIn 0.8s
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+/* adapted from https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.maingallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 8%;
+    margin-top:2.3%;
+    margin-bottom:5%;
+    margin-right: 8%;
+  }
+  
+  .images {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+  
+  .images img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 800px) {
+      .images {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+      .images {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+#welcome {
+    background-image: url('../images/minor-planets.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-align: center;
+    padding: 3vh;
+    margin: 3vh;
+    background-color: #d01313;
+    color: white;
+    font-size: 1.4em;
+
+    text-align: center;
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 35px;
+    height: 4px;
+    background-color: #f5ecec;
+    margin: 9px;
+    transition: all 0.7s ease;
+
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.containerSlideShow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1em ;
+    padding-bottom: 2em ;
+}
+
+.banner h3 {
+    font-size: 2em;
+}
+
+
+.banner-index{
+    line-height: 1.8vw;
+    position: relative;
+}
+.banner-index #banner-background img{
+    margin-top: 2%;
+    width: 100%;
+    height: 70vh;
+    display: block;
+}
+
+.banner-index #banner-text{
+    position: absolute;
+    text-align: center;
+    right: 25%;
+    top: 10%;
+    left: 25%;
+}
+
+.banner-index #banner-text h1 {
+    font-weight: 300;
+    font-size: 3em;
+    color: white;
+}
+
+.banner-index #banner-text p {
+    padding: 1.5vw 4em 0% 3.5em;
+    font-size: 1.7em;
+    color: white;
+}
+
+#text-banner-learn-more {
+    text-align: center;
+    transform: translate(0%, -170%);
+
+}
+
+#text-banner-learn-more-outside {
+    display: flex;
+    justify-content: center;
+}
+
+#text-banner-learn-more-outside a{
+  
+
+    background-color:white;
+    color: black;
+    text-decoration: none;
+    
+    padding: 0.7em 1.5em;
+    margin-top: 2%;
+    font-size: 1.5em;
+    border-style: solid;
+    border-color:  rgb(0, 14, 102);
+}
+
+#text-banner-learn-more a{
+  
+    background-color:white;
+    color: black;
+    text-decoration: none;
+    
+    padding: 0.7em 1.5em;
+    margin-top: 2%;
+    font-size: 1.5em;
+    border-style: solid;
+    border-color:  rgb(0, 14, 102);
+}
+
+
+#more-button-banner{
+    text-align: center;
+    transform: translate(0%, -300%);
+}
+
+#more-button-banner a {
+    display:inline-block;
+    background-color:white;
+    color: black;
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    margin-top: 2%;
+    font-size: 1.8em;
+    border-style: solid;
+    border-color:  rgb(0, 14, 102);
+}
+
+#text-banner{
+
+    position: absolute;
+    text-align: center;
+    right: 25%;
+    top: 10%;
+    left: 25%;
+
+
+}
+
+#text-banner a {
+
+    display:inline-block;
+   
+    color: white;
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    margin-top: 2%;
+    font-size: 1.8em;
+    
+}
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.individual-planet {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 2.5em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 2s ease;
+}
+
+.active, .dot:hover {
+    background-color: #0c0d40;
+}
+
+.book-button:hover {
+    background-color: #c11616;
+}
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+header {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#features > h2 {
+    font-size: 2.4em;
+    line-height: 1em;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.planets {
+    margin: 3vh;
+    padding: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#features {
+    padding: 5vh 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#features article {
+    width: 35%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 100px;
+    padding-bottom: 1.5em;
+}
+
+.planet-desc {
+    width: 50%
+}
+
+.planet-desc > h3 {
+    font-size: 1.4em;
+}
+
+.planet-desc p {
+    font-size: 1.4em;
+}
+
+.planets div {
+    border: 0px solid #ccc !important;
+    font-size: 2vw;
+}
+
+#features article h3 {
+    font-size: 1.3em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#features article > p {
+    margin-bottom: 1em;
+    color: #777;
+}
+
+#features .information > p {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.gallery_image {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#planet-map {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 83%;
+    }
+}
+
+.planets {
+    align-items: center;
+    padding: 2vh;
+}
+
+#contactusform{
+    color: white;
+    margin: 2vh;
+    background: rgb(11, 4, 37);
+    padding: 10px 20px 10px 20px;
+    width: 60%;
+    border-radius: 20px;
+    font-size: 1.8em;
+    position:relative;
+    left: 22%;
+}
+
+#contactusform .formquestions input[type="text"], #contactusform .formquestions #message{
+    width:100%;
+    border: 1px solid black;
+    padding: 1vw;
+}
+
+input[type="radio"]{
+    margin-top: 0.8vw;
+}
+
+#contactusform .formquestions #message{
+    height: 6vw;
+    resize: none;
+}
+
+#contactusform #errormessage{
+    margin-bottom: 2%;
+    padding: 0%;
+    background: rgb(236, 85, 85);
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#explanation {
+    box-sizing: border-box;
+}
+
+#button {
+    background: white;
+    border: solid;
+    border-color: rgb(102, 0, 0);
+    border-width: 0.2vw;
+    padding: 2%;
+    font-size: 1.5em;
+    margin-top: 4%;
+    position: relative;
+    left:40%;
+}
+
+#button:hover {
+    color: rgb(102, 0, 0);
+    font-weight: bold;
+}
+
+
+#learn-more-button{
+    text-align: center;
+    position:relative;
+
+}
+
+#more-button {
+    display: flex;
+    justify-content: center;
+}
+
+#more-button a {
+    display:inline-block;
+    background-color:white;
+    color: black;
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    margin-top: 2%;
+    font-size: 0.7em;
+    border-style: solid;
+    border-color: rgb(0, 14, 102);
+}
+
+#more-button a:hover {
+    color: rgb(0, 14, 102);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .nav-links {
+        z-index: 100;
+        position: absolute;
+        right: 0px;
+        top: 5vh;
+        height: 91vh;
+        background-color: #0c0d40;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in;
+
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .toggleBurger {
+        transform: rotate(-45deg);
+        width: 25px;
+        height: 25px;
+        background-color: #d01313;
+        margin: 6px;
+    }
+}
+
+/*
+Animates the links showing up
+ */
+@keyframes navLinkSlide {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 25%;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.about-us-header {
+    font-size: 1em;
+}
+
+
+#page-footer {
+    padding: 1.5em;
+    
+    text-transform: uppercase;
+}
+
+#secondary-menu ul {
+    width: 100%;
+    display: flex;
+    height: 5vh;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+#secondary-menu li {
+    list-style: none;
+}
+
+#secondary-menu li a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#secondary-menu a {
+    color: #504e4e;
+}
+
+
+
